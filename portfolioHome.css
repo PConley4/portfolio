@@ -1,0 +1,66 @@
+*{
+  margin-top:0;
+  margin-left: 0;
+  padding:0;
+  border-radius: 15px;
+}
+/*
+* will apply to all elements. Here we are getting rid of the margins which,
+when kept, will cause colored bars to appear.
+*/
+
+.notapersonalphoto{
+  box-shadow: 5px 5px 5px;
+  width: 720px; 
+  height: 456px;
+  /*If a image/object needs more than one style, when possible, always try and
+  make a section for it in the css sheet.*/
+}
+
+.clearContents{
+  position: relative;
+}
+
+.clearContents:before{ 
+  content: ' ';
+  position: absolute;
+  width: 200%;
+  height: 100vh;
+  /*vh is a unit of measurement. There are many of these so keep in mind what 
+  you can use in different situations. Like px.*/
+  background-position: 0px 0px;
+  /*the above four lines(plus the before modifier) are used apply opacity.
+  If the background image and opacity was on just the body, all child
+  elements would have opacity. By using a different element, but still
+  using the background image command and size modifiers, only the background
+  will be affected by these.*/
+
+  opacity: 0.5;
+  background-image: url('sky.jpg');
+}
+
+.contentsPosition{
+  position: relative;
+}
+
+
+hr {
+  display: block;
+  border-width: 20px;
+}
+
+
+td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* Adds spaces between elements of a list*/
+}
+
+th {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* Adds spaces between elements of a list*/
+  box-shadow: 5px 5px 5px;
+  width: 720px; 
+  height: 456px;
+}
