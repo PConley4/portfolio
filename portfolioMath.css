@@ -1,0 +1,25 @@
+*{
+  margin-top:0;
+  margin-left: 0;
+  padding:0;
+  border-radius: 15px;
+
+  /*Changing the z-axis should fix any links that aren't clickable. Unfortunately, the Pikachu picture does not work as intended.*/
+}
+
+html, body{
+  min-height: 200%;
+}
+
+#btnScrolltoTop{
+  position:fixed;
+  right:120px;
+  bottom:125px;
+  transform: scale(0.5);
+  width:0px;
+  height:0px;
+  border-radius:50%;
+  outline:none;
+  cursor: pointer;
+  border:none;
+}
