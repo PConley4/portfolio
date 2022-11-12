@@ -3,6 +3,8 @@
   margin-left: 0;
   padding:0;
   border-radius: 15px;
+  
+  /*Changing the z-axis should fix any links that aren't clickable. Unfortunately, the Pikachu picture does not work as intended.*/
 }
 /*
 * will apply to all elements. Here we are getting rid of the margins which,
@@ -13,8 +15,11 @@ when kept, will cause colored bars to appear.
   box-shadow: 5px 5px 5px;
   width: 720px; 
   height: 456px;
+  /*padding-bottom: 30px; this padding doesn't seem to work right. Find a new way to add space between the pikachu and the text.*/
+
   /*If a image/object needs more than one style, when possible, always try and
   make a section for it in the css sheet.*/
+  z-index: 1;/*This will put Pikachu in front of body...I think*/
 }
 
 .clearContents{
@@ -25,7 +30,7 @@ when kept, will cause colored bars to appear.
   content: ' ';
   position: absolute;
   width: 200%;
-  height: 100vh;
+  height: 350vh;
   /*vh is a unit of measurement. There are many of these so keep in mind what 
   you can use in different situations. Like px.*/
   background-position: 0px 0px;
@@ -34,9 +39,9 @@ when kept, will cause colored bars to appear.
   elements would have opacity. By using a different element, but still
   using the background image command and size modifiers, only the background
   will be affected by these.*/
-
-  opacity: 0.5;
+  opacity: 0.35;
   background-image: url('sky.jpg');
+  z-index: -1; /*This puts all things behind the z axis.*/
 }
 
 .contentsPosition{
@@ -53,7 +58,9 @@ hr {
 td {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 40px;
   /* Adds spaces between elements of a list*/
+  z-index: -1;
 }
 
 th {
@@ -61,6 +68,17 @@ th {
   padding-bottom: 30px;
   /* Adds spaces between elements of a list*/
   box-shadow: 5px 5px 5px;
-  width: 720px; 
-  height: 456px;
+}
+
+#btnScrolltoTop{
+  position:fixed;
+  right:120px;
+  bottom:125px;
+  transform: scale(0.5);
+  width:0px;
+  height:0px;
+  border-radius:50%;
+  outline:none;
+  cursor: pointer;
+  border:none;
 }
