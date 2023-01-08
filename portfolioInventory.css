@@ -8,8 +8,8 @@
 
 .screenshot{
   box-shadow: 5px 5px 5px;
-  width: 200px;
-  height: 400px;
+  width: 775px;
+  height: 275px;
   z-index: 1;
 }
 
@@ -21,7 +21,7 @@
   content: ' ';
   position: absolute;
   width: 101%;
-  height: 150vh;
+  height: 225vh;
   /*vh is a unit of measurement. There are many of these so keep in mind what 
   you can use in different situations. Like px.*/
   background-position: 0px 0px;
@@ -55,6 +55,7 @@
 td{
   padding-left: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 h1, h2, h3 {

@@ -1,16 +1,14 @@
 *{
   margin-top:0;
   margin-left: 0;
-  padding:0;
+  padding : 0;
   border-radius: 15px;
-  
-  /*Changing the z-axis should fix any links that aren't clickable. Unfortunately, the Pikachu picture does not work as intended.*/
+  box-sizing: border-box;
 }
 /*
 * will apply to all elements. Here we are getting rid of the margins which,
 when kept, will cause colored bars to appear.
 */
-
 .notapersonalphoto{
   box-shadow: 5px 5px 5px;
   width: 720px; 
@@ -29,8 +27,8 @@ when kept, will cause colored bars to appear.
 .clearContents:before{ 
   content: ' ';
   position: absolute;
-  width: 200%;
-  height: 350vh;
+  width: 101%;
+  height: 200vh;
   /*vh is a unit of measurement. There are many of these so keep in mind what 
   you can use in different situations. Like px.*/
   background-position: 0px 0px;
@@ -48,26 +46,8 @@ when kept, will cause colored bars to appear.
   position: relative;
 }
 
-
-hr {
-  display: block;
-  border-width: 20px;
-}
-
-
-td {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 40px;
-  /* Adds spaces between elements of a list*/
-  z-index: -1;
-}
-
-th {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /* Adds spaces between elements of a list*/
-  box-shadow: 5px 5px 5px;
+#picture{
+  box-shadow: 5px 5px 5px black;
 }
 
 #btnScrolltoTop{
@@ -82,3 +62,32 @@ th {
   cursor: pointer;
   border:none;
 }
+
+h1, h2, h3{
+  text-align: center;
+}
+
+hr {
+  display: block;
+  border-width: 20px;
+}
+
+td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 5px;
+  /* Adds spaces between elements of a list*/
+  z-index: -1;
+}
+
+th {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+li {
+  display: inline;
+  padding: 150px;
+  /* background-color:goldenrod; this could be useful if the background cool look good with another color or image on top */
+}
+

@@ -2,25 +2,77 @@
 <html lang ="en">
 <meta charset="UTF=8">
 <link rel = "stylesheet" href="portfolioMath.css">
-<head>
+
 <title>Math Quiz Section</title>
+
+<head>
+  <div class="clearContents">
+    <div class="contentsPosition">
+      <ul><h2>
+        <li>Home</li>
+        <li>Equation</li>
+        <li>Inventory</li>
+      </h2></ul>
+      <ul><h3>
+        <li><a href="home.html" target="_blank"><img src ="home icon.png" width = "40px" height = "40px"></a></li>
+        <li><a href="mathquiz.html" target="_blank"><img src ="equation icon.png" width = "40px" height = "40px"></a></li>
+        <li><a href="inventory.html" target="_blank"><img src ="inventory icon.png" width = "40px" height = "40px"></a></li>
+      </h3></ul>
+    </div>
+  </div>
+
   <h1>Android Math Quiz App</h1>
 </br>
 </head>
 <body>
-  <center>This is a Android App that I created for casual use using Android Studio.
+  <center>
+  This is a Android app I created in Android Studio.
     It utilizes Java, SQLite, and Android Studio and functions on both physical and virtual Android devices. 
-    It generates five two operand equations and score is saved throughout shifting through activities.
-    At the end, a final score is presented.
-    <canvas id="equation" style="border:1px solid black;"></canvas>
+    This is my first Android app with some depth to it. <br> It's purpose is to have quick equations to solve on the go.
+    It is made for children, but I have plans to make a variant that has more advanced content.
+    It generates 5 two operand addition and multiplcation equations. It keeps score that is 
+    revealed after the last equation.
   </center>
 </body>
 
+<table>
 <tr>
-  <td><h3>The equation here is randomly generated. I did this by
-  </h3></td>
-  <td></td>
+  <td>
+    <div class="screenshot"><canvas id= "equation" height="400"></canvas></td></div>
+<br>
+  <td><p>This is the opening activity. The equation here is randomly generated. I did this by creating three variables,<br>
+    one for the operator and two for the operands. They are all randomly assigned values and put into the textview.<br>
+    After the result for the current problem is shown, this activity shows again with a new equation.<br>
+    However the number of problems and the current score are saved and carried over to the other activites,<br>
+    which show when a method is called.
+  </p></td>
+    <td>
+      <div class="screenshot"><canvas id= "results" height="400"></canvas></td></div>
+  <br>
+    <td><p>Here is the results screen. It shows the final score that has been carried over from all the previous activties.<br>
+      There has been a variable keeping track of how many correct answers have been given. If it is 4 or more,<br>
+      a congratulations is in order. Any lower and encouragement to give it another try is given. 
+    </p></td>
 </tr>
+
+<tr>
+    <td>
+      <div class="screenshot"><canvas id= "correct" height="400"></canvas></td></div>
+  <br>
+    <td><p>This is what shows when the user gets a correct answer. It shows the current score which is passed through<br>
+      activties and will go to the equation activity when pressing back. The answer chosen was typed into a textview<br>
+      in the previous activity, stored into a variable, and compared to the answer. If they are equal, it shows this activity.
+    </p></td>
+      <td>
+        <div class="screenshot"><canvas id= "incorrect" height="400"></canvas></td></div>
+    <br>
+      <td><p>This is what shows when the user gets a incorrect answer. It shows the current score which is passed through<br>
+        activties and will go to the equation activity when pressing back. The answer chosen was typed into a textview<br>
+        in the previous activity, stored into a variable, and compared to the answer. If they are inequal, it shows this activity.
+      </p></td>
+</tr>
+</table>
+<p style="text-align: center"><br><br>Here is the link to some of the source code for this project: <a href="https://github.com/PConley4/Math-Quiz-Android-App">Math Quiz by Paul Conley.</a></p>
 <button id="btnScrolltoTop">
   <img src="ALttP_Magic_Mirror_Artwork.png" >
 </button>
