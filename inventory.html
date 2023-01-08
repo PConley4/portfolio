@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang ="en">
+<meta charset="UTF=8">
+<link rel = "stylesheet" href="portfolioInventory.css">
+
+<title>Inventory Section</title>
+
+<head>
+  <div class="clearContents">
+    <div class="contentsPosition">
+      <ul><h2>
+        <li>Home</li>
+        <li>Equation</li>
+        <li>Inventory</li>
+      </h2></ul>
+      <ul><h3>
+        <li><a href="home.html" target="_blank"><img src ="home icon.png" width = "40px" height = "40px"></a></li>
+        <li><a href="mathquiz.html" target="_blank"><img src ="equation icon.png" width = "40px" height = "40px"></a></li>
+        <li><a href="inventory.html" target="_blank"><img src ="inventory icon.png" width = "40px" height = "40px"></a></li>
+      </h3></ul>
+    </div>
+  </div>
+
+  <h1>Inventory Database Access Application</h1>
+</br>
+</head>
+<body>
+  <center>
+    This is a VBA application I created in MS Access. It uses VBA and MySQl. It represents a virtual inventory database like one would find in a food cupboard. It has multiple functions such
+    as data entry for items in the stock, people that come in to get them, what items they get, and what items were distributed during a time period. 
+  </center>
+</body>
+
+<table>
+<tr>
+  <td>
+    <div class="screenshot"><canvas id= "home" height="275"></canvas></td></div>
+    <td>
+      <div class="screenshot"><canvas id= "ientry" height="275"></canvas></td></div>
+    </tr>
+<br>
+  <td><p>This is the opening form. It acts as a home page for the forms. There are three databases: Inventory, Frequenter, and Distribution. All three are have similar forms as data is stored
+    <br>and pulled out the same way. Inventory has all the items that are stored in the physical location, Frequenter has information on who came in for the items, and distribution details
+    keeps track of what comes out of the location.
+  </p></td>
+    <td><p>Here is the inventory entry screen. Attributes about the items are created here along with each of their unique keys. Since this database has a food cupboard in mind, the fields
+      aren't very restrictive. There are only a few fields I could put a drop down for.
+    </p></td>
+<tr>
+  <!--I organized the table this way so that each table has a caption.-->
+    <td>
+      <div class="screenshot"><canvas id= "isearch" height="275"></canvas></td></div>
+      <td>
+        <div class="screenshot"><canvas id= "ireport" height="275"></canvas></td></div>
+      </tr>
+  <br>
+    <td><p>All of the items currently in the database are shown here. I created this via a nested form. The drop downs are filters that will adjust the form based on what is selected in the 
+      dropdown or what it can autocomplete upon typing in it. 
+    </p></td>
+    <br>
+      <td><p>This report takes all the info from the inventory database and makes a report on it. It will generate each attribute of of the item via a label until there are none left.
+      </p></td>
+
+      <tr>
+        <td>
+          <div class="screenshot"><canvas id= "fentry" height="275"></canvas></td></div>
+          <td>
+            <div class="screenshot"><canvas id= "fsearch" height="275"></canvas></td></div>
+          </tr>
+      <br>
+      <tr>
+          <td>
+            <div class="screenshot"><canvas id= "freport" height="275"></canvas></td></div>
+            <td>
+              <div class="screenshot"><canvas id= "dentry" height="275"></canvas></td></div>
+            </tr>
+        <br>
+          
+      <tr>
+        <td>
+          <div class="screenshot"><canvas id= "dsearch" height="275"></canvas></td></div>
+          <td>
+            <div class="screenshot"><canvas id= "dreport" height="275"></canvas></td></div>
+          </tr>
+      <br>
+      <td><p>To pull up the Distribution Report, the programs needs a start and end date.
+      </p></td>
+      <br>
+        <td><img src="startdate.png" width = "250px" height = "140px">
+          <img src="enddate.png" width = "250px" height = "140px">
+        </td>
+
+</table>
+<p style="text-align: center"><br><br>Here is the link to some of the source code for this project: <a href="https://github.com/PConley4/Inventory-Database">Inventory Database by Paul Conley.</a></p>
+<button id="btnScrolltoTop">
+  <img src="ALttP_Magic_Mirror_Artwork.png" >
+</button>
+<script src="inventory.js"></script>
+</html>
