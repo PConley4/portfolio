@@ -1,5 +1,5 @@
-let home = new Image();
-home.src = "InventoryHome.png";
+let index = new Image();
+index.src = "Inventoryindex.png";
 
 let ientry = new Image();
 ientry.src = "InventoryEntry.png";
@@ -22,8 +22,8 @@ dsearch.src = "DistributionSearch.png";
 let dreport = new Image();
 dreport.src = "DistributionReport.png";
 
-let homecanvas = document.getElementById("home");
-let homecontext = homecanvas.getContext('2d');
+let indexcanvas = document.getElementById("index");
+let indexcontext = indexcanvas.getContext('2d');
 
 let ientrycanvas = document.getElementById("ientry");
 let ientrycontext = ientrycanvas.getContext('2d');
@@ -46,8 +46,8 @@ let dsearchcontext = dsearchcanvas.getContext('2d');
 let dreportcanvas = document.getElementById("dreport");
 let dreportcontext = dreportcanvas.getContext('2d');
 
-homecanvas.width = "775";
-homecanvas.length = "275";
+indexcanvas.width = "775";
+indexcanvas.length = "275";
 
 ientrycanvas.width = "775";
 ientrycanvas.length = "275";
@@ -71,7 +71,7 @@ dreportcanvas.width = "775"
 dreportcanvas.length = "275";
 
 window.onload=function(){
-  homecontext.drawImage(home,0,0,775,275);
+  indexcontext.drawImage(index,0,0,775,275);
   //when saying .onload, you are basically setting someone when the onload functions happens.
   ientrycontext.drawImage(ientry,0,0,775,275);
   isearchcontext.drawImage(isearch,0,0,775,275);
