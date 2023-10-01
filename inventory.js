@@ -1,5 +1,5 @@
 let index = new Image();
-index.src = "Inventoryindex.png";
+index.src = "InventoryHome.png";
 
 let ientry = new Image();
 ientry.src = "InventoryEntry.png";
