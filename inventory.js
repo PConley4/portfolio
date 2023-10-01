@@ -22,7 +22,7 @@ dsearch.src = "DistributionSearch.png";
 let dreport = new Image();
 dreport.src = "DistributionReport.png";
 
-let indexcanvas = document.getElementById("index");
+let indexcanvas = document.getElementById("home");
 let indexcontext = indexcanvas.getContext('2d');
 
 let ientrycanvas = document.getElementById("ientry");
