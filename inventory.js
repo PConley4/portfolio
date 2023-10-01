@@ -1,26 +1,26 @@
 let index = new Image();
-index.src = "InventoryHome.PNG";
+index.src = "InventoryHome.png";
 
 let ientry = new Image();
-ientry.src = "InventoryEntry.PNG";
+ientry.src = "InventoryEntry.png";
 let isearch = new Image();
-isearch.src = "InventorySearch.PNG";
+isearch.src = "InventorySearch.png";
 let ireport = new Image();
-ireport.src = "InventoryReport.PNG";
+ireport.src = "InventoryReport.png";
 
 let fentry = new Image();
-fentry.src = "FrequenterEntry.PNG";
+fentry.src = "FrequenterEntry.png";
 let fsearch = new Image();
-fsearch.src = "FrequenterSearch.PNG";
+fsearch.src = "FrequenterSearch.png";
 let freport = new Image();
-freport.src = "FrequenterReport.PNG";
+freport.src = "FrequenterReport.png";
 
 let dentry = new Image();
-dentry.src = "DistributionEntry.PNG";
+dentry.src = "DistributionEntry.png";
 let dsearch = new Image();
-dsearch.src = "DistributionSearch.PNG";
+dsearch.src = "DistributionSearch.png";
 let dreport = new Image();
-dreport.src = "DistributionReport.PNG";
+dreport.src = "DistributionReport.png";
 
 let indexcanvas = document.getElementById("home");
 let indexcontext = indexcanvas.getContext('2d');
