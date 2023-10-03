@@ -25,6 +25,7 @@ incorrectcanvas.length = "400";
 resultscanvas.width = "200";
 resultscanvas.length = "400";
 
+//displaying images in Js is both a more modern and less restrictive method.
 window.onload=function(){
   equationcontext.drawImage(equation,0,0,200,400);
   //when saying .onload, you are basically setting someone when the onload functions happens.
@@ -32,7 +33,7 @@ window.onload=function(){
   incorrectcontext.drawImage(incorrect,0,0,200,400);
   resultscontext.drawImage(results,0,0,200,400);
 };
-
+//I decided to include this button as a way to implement js, make a function, and give the user a easy way to get to the home banner.
   btnScrolltoTop.addEventListener("click", function(){
     window.scrollTo(0,0);
   });
