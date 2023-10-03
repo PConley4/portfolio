@@ -17,7 +17,7 @@ when kept, will cause colored bars to appear.
 
   /*If a image/object needs more than one style, when possible, always try and
   make a section for it in the css sheet.*/
-  z-index: 1;/*This will put Pikachu in front of body...I think*/
+  z-index: 1;
 }
 
 .clearContents{
@@ -88,6 +88,5 @@ th {
 li {
   display: inline;
   padding: 150px;
-  /* background-color:goldenrod; this could be useful if the background cool look good with another color or image on top */
 }
 
