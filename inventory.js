@@ -70,6 +70,7 @@ dsearchcanvas.length = "275";
 dreportcanvas.width = "775"
 dreportcanvas.length = "275";
 
+//displaying images in Js is both a more modern and less restrictive method.
 window.onload=function(){
   indexcontext.drawImage(index,0,0,775,275);
   //when saying .onload, you are basically setting someone when the onload functions happens.
@@ -85,7 +86,7 @@ window.onload=function(){
   dsearchcontext.drawImage(dsearch,0,0,775,275);
   dreportcontext.drawImage(dreport,0,0,775,275);
 };
-
+//I decided to include this button as a way to implement js, make a function, and give the user a easy way to get to the home banner.
   btnScrolltoTop.addEventListener("click", function(){
     window.scrollTo(0,0);
   });
