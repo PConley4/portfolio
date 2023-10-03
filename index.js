@@ -11,8 +11,7 @@ window.onload=function(){
   pikachucontext.drawImage(pikachu,0,0,720,456);
   //when saying .onload, you are basically setting someone when the onload functions happens.
 };
-//onload();
+//I decided to include this button as a way to implement js, make a function, and give the user a easy way to get to the home banner.
   btnScrolltoTop.addEventListener("click", function(){
     window.scrollTo(0,0);
   });
-
